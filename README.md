@@ -37,19 +37,28 @@ It is designed to demonstrate UI structure, category-based filtering, and respon
 
 ## 📂 Project Structure
 
+```text
 sports-news-section/
 │
 ├── index.html
+│
 ├── css/
-│ └── style.css
+│   └── style.css
+│
 ├── js/
-│ └── script.js
+│   └── script.js
+│
 ├── assets/
-│ └── images/
+│   └── images/
+│
 ├── screenshots/
-│ └── project-ui.png
+│   ├── all.png
+│   ├── cricket.png
+│   ├── football.png
+│   ├── tennis.png
+│   └── esports.png
+│
 └── README.md
-
 ---
 
 ## 🚀 How to Run the Project
@@ -77,3 +86,10 @@ Testing sports news design concepts
 ## ⭐ Support
 
 If you like this project, feel free to star ⭐ the repository and share your feedback.
+
+---
+
+## Screenshots
+
+![All Categories](screenshots/all.png)
+
