@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportsHunt - Latest Sports News</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="main-header">
+            <div class="logo-container">
+                <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="currentColor"/>
+                </svg>
+                <h1 class="app-name">SportsHunt</h1>
+            </div>
+            <div class="header-actions">
+                <button class="icon-btn search-btn" aria-label="Search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+                <button class="icon-btn profile-btn" aria-label="Profile">
+                    <img src="https://ui-avatars.com/api/?name=User&background=random" alt="Profile" class="profile-img">
+                </button>
+            </div>
+        </header>
+
+        <!-- Category Navigation -->
+        <nav class="category-nav">
+            <ul class="category-list" id="categoryList">
+                <li class="category-item active" data-category="all">All</li>
+                <li class="category-item" data-category="cricket">Cricket</li>
+                <li class="category-item" data-category="football">Football</li>
+                <li class="category-item" data-category="tennis">Tennis</li>
+                <li class="category-item" data-category="esports">Esports</li>
+            </ul>
+        </nav>
+
+        <!-- Main Content Layout -->
+        <main class="main-layout">
+            <!-- News Feed -->
+            <section class="news-feed" id="newsFeed">
+                <!-- News items will be injected here via JS -->
+            </section>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-widget live-scores">
+                    <h3 class="widget-title">Live Scores</h3>
+                    <div class="score-card">
+                        <div class="score-header">
+                            <span class="league">IPL 2026</span>
+                            <span class="status live">LIVE</span>
+                        </div>
+                        <div class="teams">
+                            <div class="team">
+                                <span class="team-name">CSK</span>
+                                <span class="team-score">182/4</span>
+                            </div>
+                            <div class="team">
+                                <span class="team-name">MI</span>
+                                <span class="team-score">145/2 (16.2)</span>
+                            </div>
+                        </div>
+                        <div class="match-footer">MI need 38 runs in 22 balls</div>
+                    </div>
+                    
+                     <div class="score-card">
+                        <div class="score-header">
+                            <span class="league">Premier League</span>
+                            <span class="status ft">FT</span>
+                        </div>
+                        <div class="teams">
+                            <div class="team">
+                                <span class="team-name">Man City</span>
+                                <span class="team-score">3</span>
+                            </div>
+                            <div class="team">
+                                <span class="team-name">Arsenal</span>
+                                <span class="team-score">1</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget trending-topics">
+                    <h3 class="widget-title">Trending</h3>
+                    <ul class="trending-list">
+                        <li>#KohliCentury</li>
+                        <li>#ChampionsLeague</li>
+                        <li>#T20WorldCup</li>
+                        <li>#NadalRetirement</li>
+                    </ul>
+                </div>
+            </aside>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
